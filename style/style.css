@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+}
+
+@font-face {
+    font-family: "Sofia Sans";
+    font-display: swap;
+    src: url("/fonts/SofiaSans.woff2") format("woff2"), 
+         url("/fonts/SofiaSans.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+/* Тут не вийшло з 2 фоновими зображеннями, між жінкою та низом контейнера все одно залишається місце, і в макеті основний background-image звужений горизонтально, і займає меньше місця, так і не змогла знайти спосіб це вирішити*/
+.main {
+    display: flex;
+    background-image: url(/img/Background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    height: 663px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 1180px;
+    top: 65px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;
+}
+
+.logo {
+    display: flex;
+    font-family: 'Sofia Sans', sans-serif;
+    font-size: 38px;
+    line-height: 30px;
+    align-items: center;
+    color: #46B1DE;
+    gap: 7.3px;
+}
+
+.logo span:nth-child(1) {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.logo span:last-child {
+    font-size: 26.85px;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    gap: 80px;
+    padding: 17px 0 0 0;
+}
+
+a {
+    text-decoration: none;
+    color: #1B1D1F;
+    font-size: 16px;
+}
+
+.tel_lang {
+    display: flex;
+    gap: 23px;
+    height: max-content;
+    padding-top: 17px;
+}
+
+header div.tel {
+    height: max-content;
+    align-items: center;
+    display: flex;
+    gap: 5px;
+}
+
+.lang span{
+    font-weight: 600;
+}
+
+/* Main */
+.section {
+    margin: 0 auto;
+    width: 1180px;
+}
+ 
+.cutaway {
+   margin-top: 185px;
+   color: #1B1D1F;
+   position: relative;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    letter-spacing: 0.2rem;
+}
+
+h1 span {
+    color: #46B1DE;
+}
+
+.cutaway p {
+    margin-top: 30px;
+    width: 464px;
+    height: 110px;
+    line-height: 140%;
+    font-size: 16px;
+}
+
+.button {
+    display: flex;
+    gap: 120px;
+}
+
+.button a {
+    width: 180px;
+    height: 60px;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.button a:nth-child(1) {
+    background: linear-gradient(97.59deg, #46B1DE 9.8%, #0591CC 95.1%);
+    box-shadow: 0px 2px 10px #46B1DE;
+    color: #FFFFFF;
+    border: 1px solid #46B1DE;
+    
+}
+
+.button a:nth-child(2) {
+    background: #FFFFFF;
+    border: 1px solid #DDE0DC;
+    box-shadow: 0px 2px 10px #DDE0DC;
+    color: #46B1DE;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(3, 280px);
+    gap: 70px;
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.card div {
+    display: flex;
+    height: 120px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    border: 1px solid #D8E1E1
+}
+
+.card div span:nth-child(1) {
+    display: flex;
+    color: #0591CC;
+    padding: 0 10px 0 10px;
+    font-size: 65px;
+    align-items: center;
+    text-align: center;
+}
+
+.card div span:nth-child(2) {
+    display: flex;
+    color: #1B1D1F;
+    align-items: center;
+    white-space: pre-line;
+    font-size: 14px;
+}
+
+/* Part 2 */
+section.section {
+    margin-top: 148px;
+    color: #1B1D1F;
+}
+
+section.section h2 {
+    font-weight: 400;
+    font-size: 34px;
+}
+
+.section div.caption {
+    text-align: center;
+}
+
+.table {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(2, 176px);
+    grid-auto-flow: column;
+    width: 1020px;
+    height: 396px;
+    background: #A1C7D4;
+    border-radius: 12px;
+    margin: 55px auto 0 auto;
+    padding: 16px 20px;
+    row-gap: 12px;
+    column-gap: 40px;
+    box-sizing: border-box;
+}
+
+.table div {
+    background: #FFFFFF;
+    border-radius: 8px;
+    padding: 0 13px 0 20px;
+}
+
+.table span {
+    display: flex;
+    color: #46B1DE;
+}
+
+.table span span:nth-child(1) {
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    padding: 8px 15px 0 0;
+}
+
+.table span span:nth-child(2) {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 18px;
+    padding-top: 8px;
+}
+
+.table p {
+    display: inline-block;
+    margin-top: 25px;
+    line-height: 19px;
+}
