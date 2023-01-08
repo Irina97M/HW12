@@ -390,7 +390,10 @@ footer{
 }
 
 .one span {
+    display: flex;
+    flex-direction: column;
     padding-left: 10px;
+    width: 425px;
 }
 
 .one span span {
