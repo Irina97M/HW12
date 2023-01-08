@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Russo+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/style/media.css">
     <title>HW12</title>
 </head>
 <body>
@@ -33,7 +34,7 @@
             </span>
         </div>
     </header>
-    <!-- Ось тут чомусь <section class="main"> почав наслідувати з дочірнього елементу margin-top, перевірила верстку, і css, все так само як і в минулому дз, але все однаково, чого таке могло статися? в чаті допомогли, зробила через display: flex, все одно не зрозуміла як то працює-->
+    <!-- Ось тут чомусь <section class="main"> почав наслідувати з дочірнього елементу margin-top, перевірила верстку, і css, все так само як і в минулому дз, але все одно повзе вниз, чого таке могло статися? в чаті допомогли, зробила через display: flex, все одно не зрозуміла як то працює-->
     <section class="main">
         <div class="section cutaway">
             <h1>
@@ -107,7 +108,75 @@
                 <p>You will receive a complete diagnosis, and we will develop a complete individual treatment plan</p>
             </div>
         </div>
-        <div></div>
+        <div class="field">
+            <div class="in_field">
+                <h2>Make an appointment</h2>
+                <p>Fill out the form and we will contact you to make an appointment</p>
+                <form>
+                    <div class="input_name">
+                        <img class="icon" src="/img/person.svg" alt="">
+                        <span></span>
+                        <input type="text" name="name" placeholder="Your name">
+                    </div>
+                    <div class="input_phone">
+                        <img class="icon" src="/img/phone.svg" alt="">
+                        <span></span>
+                        <input type="text" name="phone" placeholder="Phone number">
+                    </div>
+                    
+                    <button type="submit">SIGN UP</button>
+                </form>
+            </div>
+        </div>
+        <div class="photo">
+            <img src="/img/foot_one.jpg" alt="photo">
+            <img src="/img/foot_two.jpg" alt="photo">
+            <img src="/img/foot_three.jpg" alt="photo">
+        </div>
     </section>
+    <footer>
+        <div class="footer">
+            <div class="grid">
+                <div class="one">
+                    <img src="/img/Zub_footer.svg" alt="logo">
+                    <span>DR. NIKOLA TESLA <br><span>dentist</span></span>
+                </div>
+                <div class="two">
+                    <span>Home</span>
+                    <span>Services</span>
+                    <span class="lang_footer"><span>UA</span> | EN</span>
+                </div>
+                <div class="three">
+                    <span>Working hours:</span><br>
+                    <span>Mon-Fri: <br>9:00-19:00</span>
+                </div>
+            </div>
+            <div class="contact">
+                <h3>CONTACTS</h3>
+                <p>Nikola Tesla</p>
+                <p>339 5th Ave, New York</p>
+                <p>
+                    <img src="/img/phone_footer.svg" alt="">
+                    <a href="tel:380999999999">+38 (099) 999-99-99</a>
+                </p>
+                <p>
+                    <a href="viber://chat?%2B380999999999"><img src="/img/viber.svg" alt="viber"></a>
+                    <a href="https://t.me/%2B380999999999"><img src="/img/telegram.svg" alt="telegram"></a>
+                    <a href="https://wa.me/380999999999"><img src="/img/whatsapp.svg" alt="whatsapp"></a>
+                </p>
+                <p>
+                    <img src="/img/inst.svg" alt="">
+                    <a href="https://www.instagram.com/dr.NikTes">dr.NikTes</a>
+                </p>
+                <p>
+                    <img src="/img/email.svg" alt="">
+                    <a href="mailto:dr.niktes@gmail.com">dr.niktes@gmail.com</a>
+                </p>
+                <p>
+                    &#169 Copyrigt 2022
+                </p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

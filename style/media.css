@@ -1,0 +1,321 @@
+@media(max-width: 992px) {
+    header {
+        max-width: 98%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .logo {
+        grid-area: 1 / 1 / 2 / 3;
+        font-size: 30px;
+    }
+
+    nav {
+        display: flex;
+        min-width: 150px;
+        justify-content: center;
+    }
+
+    ul {
+        display: flex;
+        min-width: 150px;
+        list-style-type: none;
+        gap: 7%;
+        padding: 17px 0 0 0;
+    }
+
+    .tel_lang {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .cutaway {
+        margin-top: 220px;
+    }
+
+    .cutaway h1 {
+        font-size: 35px;
+    }
+
+    .cutaway p {
+        margin-top: 20px;
+    }
+
+    .card {
+        display: flex;
+        max-width: 97%;
+        gap: 15px;
+        bottom: -55px;
+        overflow: auto;
+    }
+
+    .card div {
+        min-width: 220px;
+        display: flex;
+        max-height: 110px;
+    }
+    .card div span {
+        padding-left: 7px;
+    }
+
+    .section {
+        width: 97%;
+    }
+
+    .table {
+        display: flex;
+        flex-direction: column;
+        max-width: 350px;
+        min-height: 1110px;
+    }
+
+    .table div {
+        max-width: 300px;
+        min-height: 170px;
+    }
+
+    .field{
+        max-width: 97%;
+        min-height: 360px;
+        height: auto;
+    }
+
+    .in_field{
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    form {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 5%;
+    }
+
+    form div, button {
+        margin: 0 auto;
+    }
+    
+    .photo {
+        justify-content: space-between;
+        gap: 30px;
+        max-width: 97%;
+        overflow: auto;
+    }
+
+    footer {
+        height: auto;
+        padding-bottom: 30px;
+        background: linear-gradient(180deg, #A1C7D4 0%, #0680AA 100%);
+    }
+
+    .footer{
+        max-width: 97%;
+        display: flex;
+        flex-direction: column;
+        gap: 44px;
+    }
+
+    .grid {
+        display: grid;
+        width: 425px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        color: #0F2D4A;
+        height: 245px;
+    }
+    
+    .contact {
+        display: inline-block;
+    }
+
+    .contact h3 {
+        font-size: 21px;
+        margin-top: 26px;
+    }
+
+    .contact a {
+        font-size: 21px;
+        font-weight: 400;
+    }
+    
+    .contact p:nth-child(2) {
+        margin-bottom: 13px;
+    }
+
+    .contact p:nth-child(3) {
+        margin-bottom: 26px;
+    }
+
+    .contact p {
+        margin-top: 13px;
+    }
+
+    .contact p:nth-child(5) {
+        display: none;
+    }
+
+    .contact p:last-child {
+        display: flex;
+        justify-content: center;
+        margin-top: 36px;
+    }
+}
+
+@media(max-width: 480px) {
+    .main {
+        background-image: url(/img/Lady_mini.png), url(/img/Background.jpg);
+        background-position: bottom 5px center, center;
+        background-size: auto, cover;
+        background-repeat: no-repeat, repeat;
+        height: 568px;
+    }
+
+    header {
+       top: 30px;
+       display: flex;
+       justify-content: space-around;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    .logo {
+        max-width: 180px;
+        line-height: 10px;
+    }
+
+    .logo img {
+        width: 33.40px;
+        height: 33.40px;
+    }
+
+    .logo div {
+        width: 180px;
+    }
+
+    .logo span  {
+        font-weight: 400;
+        font-size: 16.6926px;
+    }
+    
+    .logo span:last-child {
+        font-size: 11.5564px;
+    }
+
+    section.section {
+        margin-top: 50px;
+    }
+    
+    .field {
+        margin-top: 50px;
+    }
+
+    .tel_lang {
+        padding: 0;
+        align-self: center;
+    }
+
+    .tel img {
+        width: 15px;
+    }
+
+    .tel_lang a{
+        font-size: 12px;
+    }
+
+    .lang {
+        display: none;
+    }
+
+    .cutaway {
+        margin-top: 116px;
+        text-align: center;
+    }
+
+    .cutaway h1 {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 27px;
+    }
+    .cutaway p {
+        margin-top: 7px;
+        height: auto;
+        width: auto;
+        font-weight: 400;
+    }
+
+    .button {
+        margin-top: 10px;
+        justify-content: space-around;
+    }
+
+    .button a {
+        line-height: 35px;
+        font-weight: 600;
+        font-size: 14px;
+        width: 100px;
+        height: 35px;
+    }
+
+    .card {
+        display: none;
+    }
+
+    footer {
+        padding: 30px 0 36px 10px;
+    }
+    .footer {
+        gap: 44px;
+    }
+    .grid {
+        width: 303px;
+        height: 220px;
+    }
+
+    .grid .one img {
+        width: 55px;
+    }
+
+    .grid .one span {
+        font-weight: 400;
+        font-size: 27px;
+    }
+
+    .grid .one span span {
+        font-size: 19.1523px;
+    }
+    
+    .grid .two, .three {
+        font-size: 14.2648px;
+        margin-top: 0;
+        align-self: end;
+    }
+
+    .three span:nth-child(1) {
+        font-size: 14.2648px;
+    }
+
+    .contact {
+        height: auto;
+    }
+
+    .contact h3 {
+        margin: 0 0 26px 0;
+    }
+
+    .contact p {
+        font-weight: 400;
+        font-size: 17.1613px;
+    }
+
+    .contact img {
+        width: 24px;
+    }
+
+    .contact a {
+        font-weight: 400;
+        font-size: 17.1613px;
+    }
+}
