@@ -164,7 +164,7 @@
 
 @media(max-width: 480px) {
     .main {
-        background-image: url(/img/Lady_mini.png), url(/img/Background.jpg);
+        background-image: url(../img/Lady_mini.png), url(../img/Background.jpg);
         background-position: bottom 5px center, center;
         background-size: auto, cover;
         background-repeat: no-repeat, repeat;

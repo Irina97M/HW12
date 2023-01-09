@@ -10,8 +10,8 @@
 @font-face {
     font-family: "Sofia Sans";
     font-display: swap;
-    src: url("/fonts/SofiaSans.woff2") format("woff2"), 
-         url("/fonts/SofiaSans.woff") format("woff");
+    src: url("../fonts/SofiaSans.woff2") format("woff2"), 
+         url("../fonts/SofiaSans.woff") format("woff");
     font-weight: 400;
     font-style: normal;
 }
@@ -19,7 +19,7 @@
 .main {
     position: relative;
     display: flex;
-    background-image: url(/img/Lady.png), url(/img/Background.jpg);
+    background-image: url(../img/Lady.png), url(../img/Background.jpg);
     background-position: right bottom, center;
     background-size: auto,cover;
     background-repeat: no-repeat, repeat;
